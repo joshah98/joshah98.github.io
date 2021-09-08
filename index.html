@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Hi! I'm Josha &#128075;</h1>
+							<p class="major">I am a senior at the <a href="https://www.ubc.ca">University of British Columbia</a> studying bioinformatics (BMEG) with a minor in commerce. I'm currently interning as a software developer at <a href="https://www.triumf.ca/">Triumf</a>, and I'm searching for my next co-op for January 2021!
+								So far I've had lots of fun as a fullstack developer, so I'm open to frontend or backend positions &#128516;
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Check out some of my projects!</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/banner.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Rust Operating System (WIP)</h2>
+							<p>Inspired by this <a href="https://os.phil-opp.com/">blog</a>, I've been following along building a minimal operating system. This includes building a Rust binary, 
+							a minimal kernel, VGA text mode, etc. all written in Rust. This has been a super cool learning experience so far! This isn't a very visual project, so I wasn't sure what
+							to use for a photo, so as a placeholder there is a photo of my bunny, Gina 🐇
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#second" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight01.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
+						<div class="content">
+							<h2>Find Stuff (WIP)</h2>
+							<p>This was the continuation of my prior two projects (the UBC API and course info webscraper shown below). I have a terrible sense of direction,
+								and UBC is a huge campus, and every time I wanted to get to my class I'd have to navigate through the UBC site to find the building name, then put that
+								into Maps, and repeat for every course..
+							</p>
+							<p>
+								My thought with this was it could be a easy way for directionally challenged freshmen (like I used to be..) to navigate between classes. Find Stuff also recommends 
+								study spots near your course buildings if there are gaps in your timetable! I built this with JS, React, and Node, using my UBC API, Mapbox GL for the map, and the Positionstack Geocoding API. I used material UI
+								for a bunch of the visual things too.
+							</p>
+							<p>
+								This wildly zoomed out photo doesn't quite do the app justice, so please check out the code <a href="https://github.com/joshah98/ubc-campus-nav">here</a> and run it yourself!
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#third" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight02.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
+						<div class="content">
+							<h2>UBC REST API</h2>
+							<p>
+								I wanted to make the Find Stuff app for a while, but all the course data for UBC is very inaccessible, and there were no public APIs, so I decided to make this.
+								For a comprehensive list of all the endpoints, check out the repo <a href="https://github.com/joshah98/ubc-api">here</a>!
+							</p>
+							<p>
+								I built this API with JS, Node, Express, MongoDB, and Mongoose. I also used Postman for testing, and then deployed it on Heroku.
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#fourth" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight03.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- 4.5 -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="fourth">
+						<div class="content">
+							<h2>UBC Webscraper</h2>
+							<p>
+								Before I could make the UBC REST API, I needed all the course data in a good format. I couldn't find any database online that had all the courses in one spot,
+								so I had to make a web scraper that navigated between each page and extracted the relevant data, like title, subject, section, etc.
+							</p>
+							<p>
+								Check out the code <a href="https://github.com/joshah98/ubc-courses-scraper">here</a>! I made this in Python with Selenium and BeautifulSoup.
+							</p>
+
+							<ul class="actions stacked">
+								<li><a href="#fifth" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/webscraper.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- 4.6 -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="fifth">
+						<div class="content">
+							<h2>Moonland</h2>
+							<p>
+								This was just a fun little summer project. I like 8-bit games so I wanted to try to make a simple one. In this game,
+								you spawn at a certain position and have to navigate to the final destination planet while avoiding the gravitational pull
+								of nearby planets, all while conserving fuel! The thought behind this was that you'd have to utilize the natural orbital mechanics
+								to get to the end, and strategically use fuel, just like they did for the real moon landing.
+							</p>
+							<p>
+								This was made entirely in Python using Pygame and various other Python modules.
+							</p>
+							<p>
+								Clone the <a href="https://github.com/joshah98/moonland">code</a> and give it a shot!
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#sixth" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/moonland.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- 4.5 -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="sixth">
+						<div class="content">
+							<h2>MINT Home</h2>
+							<p>
+								<a href="https://ubcmint.github.io/">MINT</a> is a neurotechnology focused UBC design team, and I was the lead software developer for the MINT Home project.
+								Individuals with certain motor disabilities may have extreme difficulty performing tasks such as picking up a remote, or changing
+								the channel of a TV. We created a wearable headset that measures brain activity to complete these actions hands-free!
+							</p>
+							<p>
+								On the software team, we designed the app that takes in the raw data, processes it, sends it through an ML model, takes the model output, and sends a signal
+								to a devices connected by bluetooth. The user would wear the headset, and think of a certain stimulus, which would then trigger an action, such as turning on a TV, or changing the volume.
+							</p>
+							<p>
+								We made this app with Electron, JS, React, and D3 for the frontend, and a Flask/Python backend. I wish I could link the repo, but
+								unfortunately all the code is private since it's being submitted to competitions.
+							</p>
+							<ul class="actions stacked">
+								<li><a href="#contact" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/mint.jpg" alt="" />
+						</div>
+					</section>
+
+
+				<!-- Seven -->
+					<section class="wrapper style1 align-center" id="contact">
+						<div class="inner medium">
+							<h2>These are some of my most recent projects. If you want to chat about any of them, get in touch!</h2>
+							<form method="post" action="https://formsubmit.co/heimannjosha@gmail.com">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
