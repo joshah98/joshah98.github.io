@@ -16,11 +16,11 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Hi! I'm Josha &#128075;</h1>
-							<p class="major">I am a senior at the <a href="https://www.ubc.ca">University of British Columbia</a> studying bioinformatics (BMEG) with a minor in commerce. I'm currently interning as a software developer at <a href="https://www.triumf.ca/">Triumf</a>.
-								After that, I will be joining <a href="https://www.relic.com/">Relic Entertainment</a> as an associate programmer for a 4 month co-op, starting in January 2022!
+							<p class="major">I am a senior at the <a href="https://www.ubc.ca">University of British Columbia</a> studying bioinformatics (BMEG) with a minor in commerce. I just finished my work terms as a software developer at <a href="https://www.triumf.ca/">Triumf</a>,
+								and I'm super excited to be joining <a href="https://www.relic.com/">Relic Entertainment</a> as an associate programmer until April 2022!
 							</p>	
 							<p class="major">	
-								So far I've gotten lots of fullstack experience at Triumf, but from Relic and onward I will be focusing on just backend positions. I'm currently open to internships for summer 2022! &#128516;
+								I am also currently open to co-op opportunities for Summer of 2022 &#128516;
 							</p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Check out some of my projects!</a></li>
@@ -35,15 +35,15 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Rust Operating System (WIP)</h2>
-							<p>Inspired by this <a href="https://os.phil-opp.com/">blog</a>, I've been following along building a minimal operating system. This includes building a Rust binary, 
-							a minimal kernel, VGA text mode, etc. all written in Rust, with no use of any other OS. This has been a super cool learning experience so far!
+							<p>Inspired by this <a href="https://os.phil-opp.com/">blog</a>, I've been following along building a bare metal operating system. This includes building a Rust binary, 
+							a minimal kernel, VGA text mode, etc, with no use of any other OS.
 							</p>
 							<ul class="actions stacked">
 								<li><a href="#second" class="button big wide smooth-scroll-middle">Next</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/rust.png" alt="" />
+							<img src="images/rust.png" alt="" style="position:relative; object-fit: scale-down; background-color: white;"/>
 						</div>
 					</section>
 
@@ -51,24 +51,24 @@
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
 						<div class="content">
 							<h2>Find Stuff (WIP)</h2>
-							<p>Back when I was a residence advisor for UBC, a concern I kept hearing from first year students was how hard it was to get from class to class
-								since they had to look up each building individually and then route to it. The UBC campus is massive, so I totally understand how easy it can be to get lost.
+							<p>Back when I was a residence advisor for UBC, there were so many complaints from first year students was how hard it was to get from class to class
+								since they had to look up each building individually and then route to it. Totally understandable since the UBC campus is huge.
 							</p>
 							<p>
-								My thought with this project was to make it as easy as possible for incoming freshmen to find stuff on campus. All they have to do is type in the course codes
-								of all their classes, and the app automatically routes them between every course in order of their occurence. If there is a gap between classes, Find Stuff also recommends
+								With Find Stuff, all you have to do is type in the course codes
+								of your classes, and the app automatically routes them between every course in order of their occurence. If there is a gap between classes, Find Stuff also recommends
 								study spots that are near your last class!
 							</p>
 							<p>
 								I built this app with JS, React, and Node, using my custom UBC API, the Positionstack Geocoding API, and Mapbox GL. I also used material UI for a bunch of the visual things.
-								This wildly zoomed out photo doesn't quite do the app justice, so please check out the code <a href="https://github.com/joshah98/ubc-campus-nav">here</a> and run it yourself!
+								Check out the code <a href="https://github.com/joshah98/ubc-campus-nav">here</a>.
 							</p>
 							<ul class="actions stacked">
 								<li><a href="#third" class="button big wide smooth-scroll-middle">Next</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
+							<img src="images/spotlight02.jpg" alt="" style="object-fit: scale-down; background-color: white;"/>
 						</div>
 					</section>
 
@@ -77,57 +77,38 @@
 						<div class="content">
 							<h2>UBC REST API</h2>
 							<p>
-								I wanted to make the Find Stuff app for a while, but all the course data for UBC is very inaccessible, and there were no public APIs, so I decided to make this.
-								For a comprehensive list of all the endpoints, check out the repo <a href="https://github.com/joshah98/ubc-api">here</a>!
+								Since there were no public APIs for UBC, I had to make my own to build Find Stuff.
+								For a comprehensive list of all the endpoints, check out the repo <a href="https://github.com/joshah98/ubc-api">here</a>! I got all this data by building a webscraper with
+								Python, Selenium, and BeautifulSoup, which you can also check out <a href="https://github.com/joshah98/ubc-courses-scraper">here</a>.
 							</p>
 							<p>
 								I built this API with JS, Node, Express, MongoDB, and Mongoose. I also used Postman for testing, and then deployed it on Heroku.
 							</p>
 							<ul class="actions stacked">
-								<li><a href="#fourth" class="button big wide smooth-scroll-middle">Next</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- 4.5 -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="fourth">
-						<div class="content">
-							<h2>UBC Webscraper</h2>
-							<p>
-								Before I could make the UBC REST API, I needed all the course data in a good format. I couldn't find any database online that had all the courses in one spot,
-								so I had to make a web scraper that navigated between each page and extracted the relevant data, like title, subject, section, etc.
-							</p>
-							<p>
-								Check out the code <a href="https://github.com/joshah98/ubc-courses-scraper">here</a>! I made this in Python with Selenium and BeautifulSoup.
-							</p>
-
-							<ul class="actions stacked">
 								<li><a href="#fifth" class="button big wide smooth-scroll-middle">Next</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/webscraper.jpg" alt="" />
+							<img src="images/spotlight03.jpg" alt="" style="object-fit: scale-down; background-color: white;"/>
 						</div>
 					</section>
 
+
 				<!-- 4.6 -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="fifth">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="fifth">
 						<div class="content">
 							<h2>Moonland</h2>
 							<p>
 								This was just a fun little summer project. I like 8-bit games so I wanted to try to make a simple one. In this game,
 								you spawn at a certain position and have to navigate to the final destination planet while avoiding the gravitational pull
-								of nearby planets, all while conserving fuel! The thought behind this was that you'd have to utilize the orbital mechanics
+								of nearby planets, all while conserving fuel. The thought behind this was that you'd have to utilize the orbital mechanics
 								to get to the end, and strategically use fuel, just like they did for the real moon landing.
 							</p>
 							<p>
 								This was made entirely in Python using Pygame and various other Python modules.
 							</p>
 							<p>
-								Clone the <a href="https://github.com/joshah98/moonland">code</a> and give it a shot!
+								Clone the <a href="https://github.com/joshah98/moonland">code</a> and give it a shot :)
 							</p>
 							<ul class="actions stacked">
 								<li><a href="#sixth" class="button big wide smooth-scroll-middle">Next</a></li>
@@ -139,7 +120,7 @@
 					</section>
 
 				<!-- 4.5 -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="sixth">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="sixth">
 						<div class="content">
 							<h2>MINT Home</h2>
 							<p>
